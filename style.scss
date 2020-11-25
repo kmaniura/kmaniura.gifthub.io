@@ -16,17 +16,21 @@ body{
    nav{
        width: 33%;
        height: 20px;
-      position: sticky;
-      top:0%;
+
       
    }
    .nawigacja{
        justify-content: space-around;
       align-items: center;
       display: flex;
+      position: sticky;
+      top:0%;
    }
    .opcja :hover{
        background-color:aqua;
+   }
+   .opcja{
+    padding: 5%;
    }
    
     
@@ -34,8 +38,8 @@ body{
 @media only screen and (max-width: 750px){
     .nawigacja{
         display: flex;
-        flex-direction: column;}
-        align-items: center;
-       
+        flex-direction: column;
+
+    }
 
     }

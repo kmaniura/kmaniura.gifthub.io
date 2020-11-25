@@ -1,56 +1,74 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+*{
+  box-sizing: border-box;
+  
 }
 
-body header {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+body{
+  background-image: url("img/tlo2.jpg");
+}
+ .nav{
+     width: 33%;
+     height: 20px;
+     justify-content: space-around;
+     align-items: center;
+     display: flex;
+}
+.nawigacja{
+  display: grid;
+  grid-template-areas: 
+  "gi1 gi2 gi3";
+  grid-gap: 1px;
+  
+}
+.opcja{
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
-body nav {
-  width: 33%;
-  height: 20px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0%;
-}
+ 
 
-body .nawigacja {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 
-body .opcja :hover {
-  background-color: aqua;
-}
+ .o1{grid-area: 2px;}
+ .o2{grid-area: 2px;}
+ .o3{grid-area: 2px;}
+ .article{
+   margin:2% 2%d;
+   display: flex;
+   justify-content: center ;
 
-@media only screen and (max-width: 750px) {
-  .nawigacja {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+
+
+ }
+
+@media only screen and (max-width: 750px){
+  .nawigacja{
+      display: flex;
+      flex-direction: column;
+
   }
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-/*# sourceMappingURL=style.css.map */
+
+  }
+  .artykuly{
+    background-image: url("img/indeks.jpg");
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3%;
+
+
+  }
+  .artykuly div{
+    width: 50%;
+  }
+ .zdjecie{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .artykul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
