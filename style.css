@@ -1,0 +1,17 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("img/tlo.jpg") header;
+  background-image-width: 100%;
+  background-image-display: flex;
+  background-image-justify-content: center;
+  background-image-align-items: center;
+}
+
+body nav {
+  border: 2 px solid black;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: url("img/tlo.jpg")
+   
+   header{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   nav{
+       border: 2 px solid black;
+   }
+    
+}
