@@ -3,15 +3,54 @@
           box-sizing: border-box;
 }
 
-body {
-  background-image: url("img/tlo.jpg") header;
-  background-image-width: 100%;
-  background-image-display: flex;
-  background-image-justify-content: center;
-  background-image-align-items: center;
+body header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body nav {
-  border: 2 px solid black;
+  width: 33%;
+  height: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+}
+
+body .nawigacja {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .opcja :hover {
+  background-color: aqua;
+}
+
+@media only screen and (max-width: 750px) {
+  .nawigacja {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

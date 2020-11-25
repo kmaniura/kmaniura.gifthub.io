@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url("img/tlo.jpg")
+    
    
    header{
     
@@ -14,7 +14,28 @@ body{
     align-items: center;
    }
    nav{
-       border: 2 px solid black;
+       width: 33%;
+       height: 20px;
+      position: sticky;
+      top:0%;
+      
    }
+   .nawigacja{
+       justify-content: space-around;
+      align-items: center;
+      display: flex;
+   }
+   .opcja :hover{
+       background-color:aqua;
+   }
+   
     
 }
+@media only screen and (max-width: 750px){
+    .nawigacja{
+        display: flex;
+        flex-direction: column;}
+        align-items: center;
+       
+
+    }
