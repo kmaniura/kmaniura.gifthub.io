@@ -1,6 +1,0 @@
-@charset "UTF-8";
-
- 
-.icon-user:before { content: '\f061'; } /* '' */
-.icon-picture:before { content: '🌄'; } /* '\1f304' */
-.icon-folder:before { content: '📁'; } /* '\1f4c1' */
