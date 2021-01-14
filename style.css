@@ -1,74 +1,239 @@
 *{
-  box-sizing: border-box;
-  
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
-
-body{
-  background-image: url("img/tlo2.jpg");
-}
- .nav{
-     width: 33%;
-     height: 20px;
-     justify-content: space-around;
-     align-items: center;
-     display: flex;
-}
-.nawigacja{
-  display: grid;
-  grid-template-areas: 
-  "gi1 gi2 gi3";
-  grid-gap: 1px;
-  
-}
-.opcja{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
- 
-
-
- .o1{grid-area: 2px;}
- .o2{grid-area: 2px;}
- .o3{grid-area: 2px;}
- .article{
-   margin:2% 2%d;
-   display: flex;
-   justify-content: center ;
-
-
-
- }
-
-@media only screen and (max-width: 750px){
-  .nawigacja{
-      display: flex;
-      flex-direction: column;
-
-  }
-
-  }
-  .artykuly{
-    background-image: url("img/indeks.jpg");
-    height: 1000px;
+.tittle{
+    position: relative;
+    min-height: 100vh;
+    background: url(indeks.jpg);
+    background-size: cover;
+    background-position: right;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 3%;
+}
+section{
+    padding: 100px;
+}
+.tittle h2{
+    font-size: 50px;
+    font-weight: 100
+}
+.about{
+    min-height: 100vh;
+}
 
-
-  }
-  .artykuly div{
-    width: 50%;
-  }
- .zdjecie{
+.button{
+    position: relative;
+    background:rgba(0, 0, 0, 0.247);
+    display: inline-block;
+    color:white;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
- }
- .artykul{
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
+}
+header .logo{
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+.heading{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.heading h2{
+    font-size: 50px;
+    padding-bottom: 8%;
+
+}
+.opis{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.img{
+    max-width: 50%;
+}
+.d2{
+    max-width: 50%;
+}
+    
+.opisbx{
+    padding-right: 10%;
+}
+.about{
+    background: url(about.jpg);
+    background-size: cover;
+    
+}
+.projekty{
+    min-height: 100vh;
+    background: url(max.jpg);
+    background-size: cover;
+}
+
+
+.projekt1{
+    position: relative;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    width: 33%;
+    margin-top: 100px;
+
+}
+.projekt{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 200px;
+    margin-top: 30px;
+    
+}
+.projekt h3{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.projekt1 h2{
+    margin-top: 10px;
+}
+.projekt1 i{
+    font-size: 100px;
+    color: black;
+}
+
+header:hover{
+    background: black;
+    opacity:0.7;
+}
+.kontakt{
+    min-height: 100vh;
+    background: url(contact.jpg);
+    background-size: cover;
+}
+.dane h3{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.dane ul li{
+    text-decoration: none;
+    margin: 15px;
+    display: flex;
+    font-size: 25px;
+    justify-content: flex-start;
+    
+}
+.dane ul li h1{
+    font-size: 25px;
+}
+.dane h1{
+    color: rgb(0, 89, 255);
+}
+.formularzbx{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.formularzbx form{
+    display: flex;
+    flex-direction: column;
+    min-width: 60%;
+}
+.formularzbx form input,
+.formularzbx form textarea{
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.603);
+    border:none;
+    color: #fff;
+}
+.formularzbx form textarea{
+    resize: none;
+    min-height: 210px;
+}
+
+.formularzbx form h3{
+    font: 30px;
+    margin-bottom: 20px;
+}
+.formularzbx form input[type="submit"]
+{
+    cursor: pointer;
+}
+footer{
+    background: black;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+@media (max-width:800px){
+
+    header{
+        position: relative;
+        padding: 100px 50px;
+        background: black;
+        display: block;
+    align-items: center;
+    }
+    header img{
+        margin-bottom: 15px;
+    }
+
+header:hover{
+    background: black;
+}
+.tittle{
+    display: block;
+    padding: 10px 15px;
+}
+.about{
+    display: block;
+    padding: 10px 15px;
+}
+.projekty{
+    padding: 10px 15px;
+    display: block;
+}
+.kontakt{
+    padding: 10px 15px;
+    display: block;
+}
+}

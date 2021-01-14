@@ -1,48 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <meta name="description" content="Portfolio programistyczne. .  .">
-  <meta name="og:title" property="og:title" content="PORTFOLIO">
-  <meta name="og:description" property="og:description" content="Portfolio programistyczne. .. .">
-  <meta name="og:image" property="og:image" content="img/image.jpg">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/youtube.css">
+    <link rel="stylesheet" href="css/fonty.css">
 </head>
 <body>
-    <nav>
-        <div class="nawigacja">
-            <div class="opcja o1">
-                <a href="#"
-                <i class="demo-icon icon-user">&nbsp </i>
-            </a>
-            <p>O Mnie</p>
+    <header>
+        <a href="#" class="logo"><img src="logo.jpg" height="100px" width="300px" alt="logo"></a>
+        <div class="przycisk"></div>
+        <ul class="menu">
+            <li><a href="#">Strona główna</a></li>
+            <li><a href="#omnie">O Mnie</a></li>
+            <li><a href="CEV.html" target="_blank">CV</a></li>
+            <li><a href="#projekts">Projekty</a></li>
+            <li><a href="#kon">Kontakt</a></li>
+        </ul>
+    </header>
+    <section class="tittle">
+        <div class="text">
+        <h2>Witam serdecznie na moim portfolio</h2>
+        <a href="#omnie" class="button">o mnie</a>
+        </div>
+    </section>
+    <section class="about" id=omnie>
+        <div class="heading">
+            <h2>O Mnie</h2>
+        </div>
+        <div class="opis">
+            <div class="opisbx d2">
+                <h3>Nazywam się Kamil Maniura.</h3>
+                <p>Mam 25 lat, mieszkam w Chorzowie.Uczę się cały czas sztuki programowania stron internetowych.Jestem na początku swej drogi i staram się uczyć czegoś nowego kiedy tylko mam czas.<br>Obecnie brak projektów ponieważ napisalem dopiero te portfolio.Owe projekty pojawią się w najbliższym czasie.</p>
             </div>
-            <div class="opcja o2">
-                <a href="#"
-                <i class="demo-icon icon-folder">&nbsp </i>
-            </a>
-            <p>CV</p>
-            </div>
-            <div class="opcja o3">
-                <a href="#"
-                <i class="demo-icon icon-picture"> &nbsp</i>
-            </a>
-            <p>Prezentacja</p>
+    
+        <div class="d2">
+            <img src="omnie.jpg" width="100%" alt="omnie">
             </div>
         </div>
-    </nav>
-    <article>
-        <div class="artykuly">
-<div class="artykul">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas similique consequatur facere culpa ducimus unde nesciunt blanditiis odio amet ipsam distinctio deserunt quibusdam sapiente eaque, voluptates dicta vitae quia natus. Excepturi culpa, eius ullam necessitatibus optio iusto, debitis magnam ex veritatis provident aliquam eveniet? Doloremque error beatae ullam hic ipsum id quibusdam itaque dolore sequi eligendi? Impedit non explicabo, aut ipsum minima quos, error reiciendis iste cupiditate repellat ex similique? Assumenda optio itaque laudantium! Quam ipsa commodi perspiciatis pariatur error sunt autem iure rem alias earum nam cupiditate praesentium, fugiat nostrum eveniet expedita dicta. Consectetur dolorem animi esse dicta sed?
-</div>
-<div class="zdjecie"><img src="img/tlo.jpg" alt=""></div>
-</div>
-       
+    </section>
+    <section class="projekty" id="projekts">
+        <div class="projekt">
+            <h3>Projekty</h3>
+        </div>
+     <div class="projekt">
+         <div class="projekt1">
+            <a style="text-decoration: none;" href="#projekts" >
+                <i class="demo-icon icon-android"></i>
+            </a>
+            <h2>Android</h2>
+            <p>Aplikacje do Androida</p>
+         </div>
+         <div class="projekt1">
+             <a style="text-decoration: none;" href="#projekts">
+                <i class="demo-icon icon-globe"></i>
+            </a>
+             <h2>Strony WWW</h2>
+             <p>Moje strony internetowe</p>
 
-    </article>
-    
+         </div>
+         <div class="projekt1">
+             <a style="text-decoration: none;" href="#projekts">
+                <i class="demo-icon icon-camera-alt"></i>
+            </a>
+             <h2>Obrazy</h2>
+             <p>Obrazy stworzone przeze mnie</p>
+        </div>
+     </div>
+     </section>
+     <section class="kontakt" id="kon">
+         <div class="dane">
+             <h3>Dane Kontaktowe</h3>
+             <ul>
+                 <li><i class="demo-icon icon-gmail"></i><h1>&nbsp;E-mail</h1>: kamilmaniura314@gmail.com</li>
+                 <li><i class="demo-icon icon-phone"></i><h1>&nbsp;Telefon:</h1> 533159270</li>
+             </ul>
+         </div>
+            <div class="formularzbx">
+                <form>
+                <h3>Napisz Do Mnie</h3>
+                <input type="text" name="" placeholder="Imię i Nazwisko">
+                <input type="email" name="" placeholder="E-mail">
+                <textarea placeholder="Twoja wiadomość"></textarea>
+                <input type="submit" value="Wyślij">
+
+            </form>
+         </div>
+     </section>
+     <footer>
+         <h3>Kamil Maniura 2020 ©</h3>
+     </footer>
 </body>
 </html>
